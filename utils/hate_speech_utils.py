@@ -274,7 +274,7 @@ def objective(trial: optuna.trial, X_train, y_train, X_val, y_val):
         warmup_steps=trial.suggest_int('warmup_steps', 100, 500),
         weight_decay=trial.suggest_float('weight_decay', 0.0, 0.1),
         evaluation_strategy="epoch",  # Evaluate at the end of each epoch
-        save_strategy="epoch",  # Ensure this matches the evaluation strategy
+        save_strategy="epoch",  
         logging_dir='./logs',
         load_best_model_at_end=True,  # Load the best model at the end of training
         save_total_limit=3,
@@ -286,7 +286,7 @@ def objective(trial: optuna.trial, X_train, y_train, X_val, y_val):
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
-        compute_metrics=compute_metrics  # Define this function as shown before
+        compute_metrics=compute_metrics 
     )
 
     # Train and evaluate
