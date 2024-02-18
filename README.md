@@ -14,6 +14,12 @@ This repository is a curated collection of my Data Science projects, showcasing 
   - `notebooks`: Jupyter notebooks with detailed code, comments, and analysis.
   - `utils`: Helper functions used across the project for various tasks like data preprocessing, model evaluation, etc.
 
+ ### COVID-19 Trend Forecasting with Prophet
+
+- **Objective**: The goal of this project is to develop a forecasting model that can predict the trend of COVID-19 cases, including confirmed cases, deaths, and recoveries. The model aims to provide insights into the trajectory of the pandemic and assist in public health planning and resource allocation.
+- **Algorithm**:  Prophet, which is an open-source forecasting tool developed by Facebook. Prophet is robust to missing data and shifts in trend, and can handle outliers well.
+- **Tools Used**: Python, Pandas, Numpy, Matplotlib/Seaborn, Prophet.
+
 ## Repository Structure
 
 - `data/`: Datasets used in the projects.
